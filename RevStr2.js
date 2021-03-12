@@ -14,3 +14,5 @@ function imprimirPalabra()
     console.log(palabraAlRevez)
 }
 
+var insertname = document.getElementById('nametxt')
+var button = document.getElementById("push")
