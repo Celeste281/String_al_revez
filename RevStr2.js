@@ -14,5 +14,5 @@ function imprimirPalabra()
     console.log(palabraAlRevez)
 }
 
-var insertname = document.getElementById('nametxt')
-var button = document.getElementById("push")
+var insertname = document.getElementById('txtPalabra')
+var button = document.getElementById("btnInvertirTexto")
