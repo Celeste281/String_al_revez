@@ -1,18 +1,15 @@
-var palabra = "Cabdal"
+const TXT_PALABRA = document.getElementById('TXT_PALABRA')
+const BTN_INVERTIR_TEXTO = document.getElementById('BTN_INVERTIR_TEXTO')
+BTN_INVERTIR_TEXTO.addEventListener('click' , revertirPalabra)
 
-//console.log(palabra.length)
-//console.log(palabra)
-
-var palabraAlRevez = palabra.charAt(6) + palabra.charAt(5) + palabra.charAt(4) + palabra.charAt(3) + palabra.charAt(2) + palabra.charAt(1) + palabra.charAt(0)
-
-//console.log(imprimirPalabra)
-imprimirPalabra()
-function imprimirPalabra()
+function revertirPalabra()
 {
-    console.log(palabra)
-    console.log(palabra.length)
-    console.log(palabraAlRevez)
+    const PALABRA = TXT_PALABRA.value
+    const NUMERO_DE_CARACTERES_PALABRA = PALABRA.length
+    let palabraInvertida = ''
+    for(let i=NUMERO_DE_CARACTERES_PALABRA - 1 ; i >= 0; i--)
+    {
+        palabraInvertida = palabraInvertida + PALABRA.charAt(i)
+    }
+    TXT_PALABRA.value = palabraInvertida
 }
-
-var insertname = document.getElementById('txtPalabra')
-var button = document.getElementById("btnInvertirTexto")
