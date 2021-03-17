@@ -9,7 +9,7 @@ function revertirPalabra()
     let palabraInvertida = ''
     for(let i=NUMERO_DE_CARACTERES_PALABRA - 1 ; i >= 0; i--)
     {
-        palabraInvertida = palabraInvertida + PALABRA.charAt(i)
+        palabraInvertida += PALABRA.charAt(i)
     }
     TXT_PALABRA.value = palabraInvertida
 }
